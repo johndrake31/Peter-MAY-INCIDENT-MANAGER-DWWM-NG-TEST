@@ -33,6 +33,7 @@ span{
   color: red;
 }
 button{
+  margin-right: 12px;
   text-decoration: none;
   text-transform: capitalize;
   color: black;
@@ -47,3 +48,11 @@ button{
     color: white;
     background-color: rgba(0, 0, 0, 0.292);
   }
+.delete-me{
+  width: 50px;
+  color: red;
+}
+.keep{
+  width: 50px;
+  color: white;
+}
