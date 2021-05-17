@@ -4,21 +4,35 @@
 
 <form [formGroup]="form" class="big-box" (ngSubmit)="addMyIncident()">
   <div class="box">
-    <div class="inside1">
-      <label for="titre">Titre</label>
-      <input type="" formControlName="titre">
+    <div class="inside1 flex-row">
+      <div class="flex-col">
+       <label for="titre">Titre</label>
+       <input type="" formControlName="titre">
+      </div>
 
-      <label for="email">E-mail</label>
-      <input type="email" formControlName="email">
+      <div class="flex-col">
+        <label for="email">E-mail</label>
+        <input type="email" formControlName="email">
+      </div>
+    </div>
+    <div class="inside3 flex-row">
+      <div class="flex-col">
+        <label for="description">Description</label>
+        <input type="text" formControlName="description">
+      </div>
 
-      <label for="description">Description</label>
-      <input type="text" formControlName="description">
+      <div class="flex-col">
+        <label for="progress">Progress:</label>
+        <input type="number" min="0" max="100" name="progress" formControlName="progress">
+      </div>
 
-      <label for="progress">Progress:</label>
-      <input type="number" min="0" max="100" name="progress" formControlName="progress">
+      <div class="flex-col">
+       <label for="open">open:</label>
+       <input class="checkbox" type="checkbox" name="truthy" formControlName="open">
+      </div>
     </div>
 
-    <div class="inside2">
+    <div class="inside3 flex-row" >
       <div class="flex-col">
         <label for="level">Level</label>
         <select formControlName="level">
@@ -37,11 +51,7 @@
         </select>
       </div>
 
-
-      <div class="flex-col"></div>
-       <label for="open">open:</label>
-       <input class="checkbox" type="checkbox" name="truthy" formControlName="open">
-      </div>
+    </div>
   </div>
 
   <button type="submit" class="myBTN">Add Incident</button>
