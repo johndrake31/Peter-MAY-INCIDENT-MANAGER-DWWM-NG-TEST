@@ -1,0 +1,49 @@
+<br>
+<hr>
+<h2>Formulaire pour ajouter un incident </h2>
+
+<form [formGroup]="form" class="big-box" (ngSubmit)="addMyIncident()">
+  <div class="box">
+    <div class="inside1">
+      <label for="titre">Titre</label>
+      <input type="" formControlName="titre">
+
+      <label for="email">E-mail</label>
+      <input type="email" formControlName="email">
+
+      <label for="description">Description</label>
+      <input type="text" formControlName="description">
+
+      <label for="progress">Progress:</label>
+      <input type="number" min="0" max="100" name="progress" formControlName="progress">
+    </div>
+
+    <div class="inside2">
+      <div class="flex-col">
+        <label for="level">Level</label>
+        <select formControlName="level">
+          <option value="ERROR">ERROR</option>
+          <option value="FATAL">FATAL</option>
+          <option value="MEDIUM">MEDIUM</option>
+          <option value="MINOR">MINOR</option>
+        </select>
+      </div>
+
+      <div class="flex-col">
+        <label for="type">Type</label>
+        <select formControlName="type" id="cars">
+          <option value="BUG">BUG</option>
+          <option value="FEATURE">FEATURE</option>
+        </select>
+      </div>
+
+
+      <div class="flex-col"></div>
+       <label for="open">open:</label>
+       <input class="checkbox" type="checkbox" name="truthy" formControlName="open">
+      </div>
+  </div>
+
+  <button type="submit" class="myBTN">Add Incident</button>
+</form>
+

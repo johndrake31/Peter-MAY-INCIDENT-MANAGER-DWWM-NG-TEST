@@ -1,0 +1,16 @@
+button{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.723);
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2px;
+  border: none;
+  font-size: 1.2rem;
+
+}
+ button:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.292);
+  }

@@ -1,0 +1,26 @@
+.firstdiv{
+ padding-left: 30px;
+ padding-right: 30px;
+ color: white;
+ background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.298),rgba(255, 255, 255, 0.36)), url(https://images.unsplash.com/photo-1489486501123-5c1af10d0be6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80);
+ background-position: center;
+ background-size: cover;
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: white;
+  background-color: rgba(193, 193, 193, 0.292);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2px;
+
+}
+a:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.292);
+  }

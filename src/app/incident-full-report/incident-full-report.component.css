@@ -1,0 +1,47 @@
+.outer{
+padding: 5px;
+}
+
+.inside{
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.fatal{
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(255, 178, 178)}
+.error{
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(245, 198, 198)}
+.medium{
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(255, 211, 178)}
+.minor{
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(255, 236, 178)}
+.closed{
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color:  #fafafa !important}
+
+span{
+  color: red;
+}
+button{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  background-color: rgb(193, 193, 193);
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2px;
+  border: none;
+
+}
+ button:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.292);
+  }

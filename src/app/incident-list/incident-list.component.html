@@ -1,0 +1,12 @@
+
+<div *ngIf="!displayAllIncidents">
+  <button (click)="displayAllIncidents=!displayAllIncidents"> Back to Full Incidents List</button>
+  <app-incident-full-report [fullIncidentInfo]="incidentDetials" (sendTruthy)="closeBigWindow($event)"></app-incident-full-report>
+</div>
+
+<div *ngIf="displayAllIncidents">
+  <h3> Incident List:</h3>
+  <app-incident *ngFor="let item of incidentTbl" [incidentInfo]="item" (sendId)="getIncidentId($event)" ></app-incident>
+</div>
+
+

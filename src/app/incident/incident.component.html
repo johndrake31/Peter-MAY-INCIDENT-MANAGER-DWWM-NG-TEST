@@ -1,0 +1,23 @@
+<div class="outer">
+  <div class="inside">
+    <div [ngClass]="{
+  'fatal': incidentInfo.level === 'FATAL',
+   'error': incidentInfo.level === 'ERROR',
+   'medium': incidentInfo.level === 'MEDIUM',
+   'minor': incidentInfo.level === 'MINOR',
+   'closed': incidentInfo.open == false
+}">
+      <h4>Incident ID: #{{incidentInfo.id}} </h4>
+      <h4>Titre: {{incidentInfo.titre}}</h4>
+      <p>Level: {{incidentInfo.level}}</p>
+      <p>Type: {{incidentInfo.type}}</p>
+      <p>Date Created: {{incidentInfo.dateCreation}}</p>
+      <p>Progress:</p>
+      <mat-progress-bar mode="determinate" [value]="incidentInfo.progress"></mat-progress-bar>
+      <br>
+      <button (click)="getId()">More Info</button>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>

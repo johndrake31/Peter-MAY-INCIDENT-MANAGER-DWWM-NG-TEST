@@ -1,0 +1,31 @@
+<h3>Full Report</h3>
+
+<div class="delete" *ngIf="deleteBool" >
+  <h3>Do you want to delete?!</h3>
+  <a *ngIf="deleteBool" (click)="deleteBool =!deleteBool" routerLink= "/home">NO</a>
+  <a  *ngIf="deleteBool" (click)="deleteMyIncident()" routerLink= "/">yes...</a>
+</div>
+<div class="outer" >
+  <div class="inside">
+    <div [ngClass]="{
+  'fatal': fullIncidentInfo?.level === 'FATAL',
+   'error': fullIncidentInfo?.level === 'ERROR',
+   'medium': fullIncidentInfo?.level === 'MEDIUM',
+   'minor': fullIncidentInfo?.level === 'MINOR',
+   'closed': fullIncidentInfo?.open == false
+    }">
+      <h4>Incident ID: #{{fullIncidentInfo?.id}} </h4>
+      <h4>Titre: {{fullIncidentInfo?.titre}}</h4>
+      <p>Level: {{fullIncidentInfo?.level}}</p>
+      <p>Type: {{fullIncidentInfo?.type}}</p>
+      <p>Date Created: {{fullIncidentInfo?.dateCreation}}</p>
+      <p>Progress:</p>
+      <mat-progress-bar mode="determinate" [value]="fullIncidentInfo?.progress"></mat-progress-bar>
+      <p>Date Created: {{fullIncidentInfo?.dateCreation}}</p>
+      <p>Date Modified: {{fullIncidentInfo?.dateModification}}</p>
+      <p>Open: {{fullIncidentInfo?.open}}</p>
+      <button class="myBTN" *ngIf="!deleteBool" (click)="deleteBool =!deleteBool" >Delete Incident</button>
+    </div>
+  </div>
+</div>
+
