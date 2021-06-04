@@ -1,7 +1,4 @@
-label{
-  margin-left: 15px;
-  margin-right: 6px;
-}
+
 
 button{
   margin-top: 15px;
@@ -14,15 +11,42 @@ button{
 input{
 
 }
-select, input{
+select, option, input{
   height: 25px;
 }
 
 .checkbox{
+  border: 2px;
+
   height: 25px;
   width: 25px;
 }
+.flex-row{
+  display: flex;
+}
 .flex-col{
+  max-width: 250px;
+  margin-right: 25px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  padding: 5px 8px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.737);
+  background-color: rgba(169, 130, 130, 0.161);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2px;
+}
+
+button:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.292);
 }

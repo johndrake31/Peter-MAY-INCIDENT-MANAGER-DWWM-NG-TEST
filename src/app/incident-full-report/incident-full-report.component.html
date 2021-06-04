@@ -2,8 +2,8 @@
 
 <div class="delete" *ngIf="deleteBool" >
   <h3>Do you want to delete?!</h3>
-  <a *ngIf="deleteBool" (click)="deleteBool =!deleteBool" routerLink= "/home">NO</a>
-  <a  *ngIf="deleteBool" (click)="deleteMyIncident()" routerLink= "/">yes...</a>
+  <button class="keep" *ngIf="deleteBool" (click)="deleteBool =!deleteBool" routerLink= "/home">NO</button>
+  <button class="delete-me" *ngIf="deleteBool" (click)="deleteMyIncident()" routerLink= "/">yes...</button>
 </div>
 <div class="outer" >
   <div class="inside">
