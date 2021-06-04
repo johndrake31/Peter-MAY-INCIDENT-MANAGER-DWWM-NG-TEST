@@ -1,5 +1,6 @@
 # MyNgFinals
-
+# Note Exam: 17/20 
+### Beau boulot, il manque toutes les redirections, c'est dommage. Une modal pour la suppression aurait été un +. Pas besoin de router link sur les liens de suppression, ce sont les fonction qui doivent faire les redirections (navigateByUrl().See you later!
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
 
 ## Development server

@@ -3,12 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Incidents } from './model/incident.model';
 
-
-
-
-
-/// my stuff
-
 @Injectable({
   providedIn: 'root'
 })
